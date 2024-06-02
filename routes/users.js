@@ -5,7 +5,7 @@ const fetch = require('node-fetch');
 const User = require('../models/users');
 const { checkBody } = require('../modules/checkBody');
 
-const OWM_API_KEY = 'ce7418650c86eae6629dfcfdda141c14';
+const OWM_API_KEY = process.env.API_KEY;
 
 router.post('/signup', (req, res) => {
 //checks saisie post correcte
